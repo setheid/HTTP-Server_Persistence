@@ -43,6 +43,7 @@ describe('locationsRouter correctly responds to requests', () => {
       fs.unlink(__dirname + '/../data/' + files.pop(), (err) => {
         if (err) return console.log(err);
       });
+      // Do I need done()? and does it matter where I put it in the after statement?
       done();
     });
   });
